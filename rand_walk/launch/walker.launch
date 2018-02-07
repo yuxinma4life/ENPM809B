@@ -1,0 +1,12 @@
+<launch>
+
+
+   <include file="$(find turtlebot_gazebo)/launch/turtlebot_world.launch">
+	<arg name="world_file" value="$(find rand_walk)/world/empty.world"/>
+   </include>
+
+     <node name="rand_walk" pkg="rand_walk" type="rand_walk" 
+     	output="screen">
+     </node>
+
+</launch>
