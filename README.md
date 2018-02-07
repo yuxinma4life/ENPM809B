@@ -1,22 +1,27 @@
 # ENPM809B
 
-Install-
+## Pre-requirement
+
+-ROS Kinetic 16.04
+-Gazebo
+
+
+## Install-
 ```
  sudo apt-get install ros-<distro>-turtlebot-apps ros-<distro>-turtlebot-rviz-launchers
- 
-```
-
-Bring-up
-```
-roslaunch turtlebot_bringup minimal.launch --screen
 
 ```
-Gazebo launch
+## Build
+In the workspace (catkin_ws)
 ```
-roslaunch turtlebot_gazebo turtlebot_world.launch
+catkin_make
 ```
 
-keyop for controlling turtlebot with keyboard
+## Run
 ```
-roslaunch kobuki_keyop keyop.launch
+rosrun turtleGo turtleGo_node
+```
+### Check the topic content
+```
+rostopic echo /cmd_vel_mux/input/teleop
 ```
