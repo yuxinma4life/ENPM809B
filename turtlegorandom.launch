@@ -1,0 +1,4 @@
+<launch>
+<include file = "$(find turtlebot_gazebo)/launch/turtlebot_world.launch"/>
+<node pkg = "turtleGo" type = "turtleGo_node" name="turtleGo_node" />
+</launch>
