@@ -20,3 +20,11 @@ keyop for controlling turtlebot with keyboard
 ```
 roslaunch kobuki_keyop keyop.launch
 ```
+
+run hello code that has lecture tutorial random move commands in with proper topic
+```
+cd <repo_directory>
+source devel/setup.bash
+rosrun my_first_package hello
+```
+The turtlebot should run randomly in curves
