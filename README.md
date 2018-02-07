@@ -25,6 +25,7 @@ run hello code that has lecture tutorial random move commands in with proper top
 ```
 cd <repo_directory>
 source devel/setup.bash
+catkin_make
 rosrun my_first_package hello
 ```
 The turtlebot should run randomly in curves
