@@ -1,31 +1,27 @@
-# ENPM809B
+# ENPM809B Assigment 1
 
-Install-
+## This assignment is to implement a ros node to randomly run turtlebot. 
+
+### Install essential ROS packages:
 ```
  sudo apt-get install ros-<distro>-turtlebot-apps ros-<distro>-turtlebot-rviz-launchers
  
 ```
-
-Bring-up
+### Clone repo to ros workspace, e.g. catkin_ws
 ```
-roslaunch turtlebot_bringup minimal.launch --screen
-
+ git clone https://github.com/yuxinma4life/ENPM809B.git
 ```
-Gazebo launch
+### Build package
 ```
-roslaunch turtlebot_gazebo turtlebot_world.launch
+ cd ~/catkin_ws
+ catkin_make
 ```
-
-keyop for controlling turtlebot with keyboard
+### Run node from launch file
 ```
-roslaunch kobuki_keyop keyop.launch
+ source devel/setup.bash
+ roslaunch simple_walk simple_walk.launch
 ```
-
-run hello code that has lecture tutorial random move commands in with proper topic
+### Change gazebo world for running turtlebot, e.g. playground.world
 ```
-cd <repo_directory>
-source devel/setup.bash
-catkin_make
-rosrun my_first_package hello
+ roslaunch simple_walk simple_walk.launch world_file:=$(rospack find turtlebot_gazebo)/worlds/playground.world
 ```
-The turtlebot should run randomly in curves
