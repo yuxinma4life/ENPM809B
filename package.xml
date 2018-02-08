@@ -1,12 +1,13 @@
-<package>
-  <name>my_first_package</name>
+<?xml version="1.0"?>
+<package format="2">
+  <name>simple_walk</name>
   <version>0.0.0</version>
-  <description>The my_first_package package</description>
+  <description>The simple_walk package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
   <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
-  <maintainer email="yuxin@todo.todo">yuxin</maintainer>
+  <maintainer email="shaotu@todo.todo">shaotu</maintainer>
 
 
   <!-- One license tag required, multiple allowed, one license per tag -->
@@ -18,7 +19,7 @@
   <!-- Url tags are optional, but multiple are allowed, one per tag -->
   <!-- Optional attribute type can be: website, bugtracker, or repository -->
   <!-- Example: -->
-  <!-- <url type="website">http://wiki.ros.org/my_first_package</url> -->
+  <!-- <url type="website">http://wiki.ros.org/simple_walk</url> -->
 
 
   <!-- Author tags are optional, multiple are allowed, one per tag -->
@@ -49,6 +50,8 @@
   <!--   <doc_depend>doxygen</doc_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roscpp</build_depend>
+	
+
 
 
   <!-- The export tag contains other, unspecified, tags -->
