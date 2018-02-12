@@ -35,9 +35,9 @@ rostopic echo /cmd_vel_mux/input/teleop
 ```
 roslaunch turtleGo turtleforandom.launch
 ```
-![alt text](https://github.com/yuxinma4life/ENPM809B/tree/Zejiang/result/gazebo.png)
+![Empty_world](https://github.com/yuxinma4life/ENPM809B/blob/Zejiang/result/gazebo.png)
 ### Visualizing the ROS computation graph in rqt
 ```
 rqt_graph
 ```
-![alt text](https://github.com/yuxinma4life/ENPM809B/tree/Zejiang/result/rqt_graph.png)
+![rqt_graph](https://github.com/yuxinma4life/ENPM809B/blob/Zejiang/result/rqt_graph.png)
